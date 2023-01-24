@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+    margin: 0;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+  }
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  line-height: 22px;
+  transition: .3s ease all;
+
+}
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  background: black;
+  border-color: orange;
+}
+
+/*layaouts*/
+.documento {
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+
+  max-width: 1200px;
+  width:90%;
+  margin: 0 auto;
+  display: grid;
+  padding: 4rem;
+  background: white;
+  gap: 4rem;
+}  
+body.dark .documento {
+  background: black;
+  border-color: orange;
+}
+
+
+  .encabezado {
+    border-width: 5px;
+    border-style: solid none solid none;
+    border-color: rgb(19, 66, 97);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;   
+  } 
+  body.dark .encabezado{
+    border-color: orange;
+  }
+    .foto_carnet img{
+      width: 60%;
+      display: block;
+      margin-right: auto;
+    }
+
+    .informacion_principal {
+      display: grid;
+      grid-template-columns: 1fr;
+      font-size: 24px;
+      line-height: 40px;
+
+    }
+      h1.nombre_y_apellido { 
+        font-size: 45px;
+        color: rgb(19, 66, 97);
+      }  
+      body.dark h1.nombre_y_apellido {
+        color: orange;
+      }
+
+      .fila-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .fila-1 img{
+        width: 20%;
+        height: 45%;
+      }
+      .localidad img{
+        width: 13%;
+        height: 45%;
+      }
+
+  h3.sobre_mi {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(19, 66, 97)
+  }
+  body.dark h3.sobre_mi {
+    color: orange;
+  }
+
+  h4,h5,h6 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    color: rgb(19, 66, 97);
+  }
+  body.dark h4{
+    color: orange;
+  }
+  body.dark h5{
+    color: orange;
+  }
+  body.dark h6{
+    color: orange;
+  }
+  .contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+    .grupo-1 img{
+      width: 13%;
+      cursor: pointer;
+    }
+    
+      .educacion p{
+        font-weight: bold;
+      }
+      
+
+      
+      .switch {
+        background: grey;
+        border-radius: 1000px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+
+      }
+      .switch::after {
+        content: "";
+        display:block;
+        width:35px;
+        height:30px;
+        position: absolute;
+        background: white;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px;
+      }
+      .switch.active {
+        background: orange;
+        color: black;
+      }
+      .switch.active::after {
+        right: 0;
+        left:unset;
+      }
+
+      .switch span{
+        width: 30px;  
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: white;
+      }
+
+    p.uba, p.estrada, p.ingles, p.aleman  {
+      font-size: 20px;
+      font-weight: bold;
+
+    }
+
+    p.habilidades,p.lenguages_de_programacion, p.experiencias  {
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: bold;
+    }
+
+    p.se_programar, p.trabajo_en_equipo, p.edicion_de_audio_y_video, p.practicas_agricolas, p.microemprendimientos {
+      font-weight: bold;
+    }
+
+
+
+
+
